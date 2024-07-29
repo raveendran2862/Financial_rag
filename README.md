@@ -1,5 +1,5 @@
 <div align="center">
-    <h2>Code Vipassana - Project Saadhna 2024/h2>
+    <h2>Code Vipassana - Project Saadhna 2024</h2>
     <h1>TechX - Financial Advisory Bot using RAG with GenAI</h1>
     Team Members: <i> <a href="mailto:atharvamundke22@gmail.com">Atharva Mundke</a>, <a href="mailto:shwetanagapure1024@gmail.com">Shweta Nagapurer</a>, 
 </div>
