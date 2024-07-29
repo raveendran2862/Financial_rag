@@ -30,3 +30,38 @@ In today's complex financial landscape, individuals struggle to access personali
 ### 4. Solution Overview
 The Financial Advisory Assistant Bot aims to address this gap by delivering swift, precise, and context-aware financial advice using advanced AI technologies. Leveraging Retrieval-Augmented Generation (RAG) and Generative AI, this bot integrates real-time data from financial news and banking websites, stored in a MySQL relational database, to ensure up-to-date and accurate responses.
 
+---
+
+# Financial Advice Chatbot
+
+This project implements a financial advice chatbot using Vertex AI's Gemini Pro model. It integrates with Google Colab and provides a user-friendly interface through ipywidgets.
+
+## Features
+
+- **User Input:** Collects relevant financial information from the user through a form.
+- **Prompt Generation:** Constructs a detailed prompt incorporating user data and the query.
+- **AI-Powered Advice:** Leverages Gemini Pro to generate personalized financial advice.
+- **Safety Measures:** Implements safety settings to filter out harmful content.
+
+## Requirements
+
+- **Google Colab:** The code is designed to run within a Google Colab environment.
+- **Vertex AI:** Requires access to Vertex AI and the Gemini Pro model.
+- **Libraries:** Install necessary libraries using `!pip install ipywidgets google-cloud-aiplatform`.
+
+## Usage
+
+1. **Upload PDF:** Upload your financial document (e.g., bank statement, loan agreement) to Colab.
+2. **Authenticate:** Authenticate your Google account to access Vertex AI.
+3. **Fill the Form:** Provide your financial details and specify your query in the interactive form.
+4. **Get Advice:** Click the "Get Advice" button to generate personalized financial advice.
+
+## Code Structure
+
+- **`app.py`:** Flask application for web deployment (not used in Colab).
+- **Colab Notebook:**
+    - Imports necessary libraries.
+    - Handles PDF upload and authentication.
+    - Defines prompt template, generation config, and safety settings.
+    - Creates input widgets and a button to trigger advice generation.
+    - Displays the interactive form and output area.
