@@ -18,10 +18,8 @@ project-root/
 ├── Database/
 │   └── (codebase files)
 │   └── (Store Data)
-│   └── (README.md)
 ├── Financial Bot/
 │   └── (codebase files)
-│   └── (README.md)
 ├── Financial Advisory bot/
 │   └── (codebase files)
 │   └── (README.md)
