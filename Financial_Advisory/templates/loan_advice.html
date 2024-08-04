@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Advisor</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FFF5E6;
+        }
+        h1 {
+            color: #FF8C00;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        form {
+            background-color: #FFDAB9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #D2691E;
+        }
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #FFB366;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #FF8C00;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #FFA500;
+        }
+        #advice {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #FFE4B5;
+            border-radius: 8px;
+            border-left: 5px solid #FF8C00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Loan Advisor</h1>
+    <form id="loanForm">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="occupation">Occupation:</label>
+        <input type="text" id="occupation" name="occupation" required>
+
+        <label for="monthly_income">Monthly Income:</label>
+        <input type="number" id="monthly_income" name="monthly_income" required>
+
+        <label for="monthly_expenses">Monthly Expenses:</label>
+        <input type="number" id="monthly_expenses" name="monthly_expenses" required>
+
+        <label for="current_saving">Current Savings:</label>
+        <input type="number" id="current_saving" name="current_saving" required>
+
+        <label for="investment_goals">Investment Goals:</label>
+        <input type="text" id="investment_goals" name="investment_goals" required>
+
+        <label for="risk_tolerance">Risk Tolerance:</label>
+        <input type="text" id="risk_tolerance" name="risk_tolerance" required>
+
+        <label for="car_price">item Price:</label>
+        <input type="number" id="item_price" name="item_price" required>
+
+        <label for="loan_term">Loan Term (in months):</label>
+        <input type="number" id="loan_term" name="loan_term" required>
+
+        <label for="interest_rate">Interest Rate:</label>
+        <input type="number" id="interest_rate" name="interest_rate" step="0.01" required>
+
+        <label for="outstanding_loans">Outstanding Loans:</label>
+        <input type="text" id="outstanding_loans" name="outstanding_loans" required>
+
+        <label for="credit_score">Credit Score:</label>
+        <input type="number" id="credit_score" name="credit_score" required>
+
+        <button type="submit">Get Advice</button>
+    </form>
+
+    <div id="advice"></div>
+
+    <script>
+        $(document).ready(function() {
+            $('#loanForm').submit(function(e) {
+                e.preventDefault();
+                $.ajax({
+                    url: '/get_advice',
+                    type: 'post',
+                    data: $('#loanForm').serialize(),
+                    success: function(response) {
+                        $('#advice').html('<h2>Advice:</h2><p>' + response.advice + '</p>');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
