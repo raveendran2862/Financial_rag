@@ -15,7 +15,7 @@ import os
 app = Flask(__name__)
 
 # Set up your Google API key
-os.environ['GOOGLE_API_KEY'] = 'AIzaSyBkw7f0n_lyrxwV-L4JeQjsT5GU2Ks3w3k'
+os.environ['GOOGLE_API_KEY'] = 'YOUR_GOOGLE_API_KEY'
 
 # Load and process the PDF
 file_path = "General.pdf"
