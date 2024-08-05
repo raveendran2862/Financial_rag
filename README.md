@@ -42,5 +42,11 @@ The financial bot is designed to handle automated financial queries. To set up a
    - An automated system for handling financial queries and providing basic financial information
 
 3. **Advisory Bot**
-    - A more advanced system that uses GenAI to provide personalized financial advice Based on users information 
+    - A more advanced system that uses GenAI to provide personalized financial advice Based on users information
+---
+## Additional Information
+
+For more details about the project, including in-depth discussions, technical explanations, and updates, please check our [Medium blog][(https://medium.com/@project-saadhna](https://medium.com/@atharvamundke22/how-to-build-a-financial-advisory-bot-using-rag-with-genai-cbaa963c4222)).
+
+---
 
