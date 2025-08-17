@@ -1,5 +1,5 @@
 <div align="center">
-    <h2>Code Vipassana - Financial Bot using RAG</h2>
+    <h2> Financial Bot using RAG </h2>
 </div>
 
 ---
