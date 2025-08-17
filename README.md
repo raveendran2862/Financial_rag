@@ -1,10 +1,8 @@
 <div align="center">
-    <h2>Code Vipassana - Project Saadhna 2024</h2>
-    Team Members: <i> <a href="mailto:atharvamundke22@gmail.com">Atharva Mundke</a>, <a href="mailto:shwetanagapure1024@gmail.com">Shweta Nagapure</a> 
+    <h2>Code Vipassana - Financial Bot using RAG</h2>
 </div>
 
 ---
-### Team Name: TechX
 
 ## Financial Advisory Bot using RAG with GenAI
 
